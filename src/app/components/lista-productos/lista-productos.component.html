@@ -1,0 +1,11 @@
+<h3>{{titulo}} </h3>
+<div class="productos">
+    @for (producto of productos; track $index) {
+        <div class="producto" (click)="onClickProducto(producto)">
+            <img [src]="producto.imgUrl" alt="">
+            <p>{{producto.nombre}}</p>
+            <p>{{producto.precio}}</p>
+        </div>
+    }
+
+</div>

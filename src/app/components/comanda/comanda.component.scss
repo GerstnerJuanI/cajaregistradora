@@ -1,0 +1,11 @@
+.productos{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+h3 {
+    text-transform: uppercase;
+    background-color: beige;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
+}

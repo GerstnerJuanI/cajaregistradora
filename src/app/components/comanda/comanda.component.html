@@ -1,0 +1,10 @@
+<h3>comanda</h3>
+<p>Total:${{calcularTotal()}}</p>
+<div class="productos">
+    @for (producto of arrProductos; track $index) {
+        <div class="producto" (click)="onClickBorrar($index)">
+            <p>{{producto.nombre}} x {{producto.cantidad}} - ${{producto.precio * producto.cantidad}}</p>
+        </div>
+    }
+
+</div>
